@@ -229,6 +229,12 @@ var APP_DATA = {
           "pitch": 0.13586746760712742,
           "rotation": 0,
           "target": "3-reclaimed360-4"
+        },
+        {
+          "yaw": 2.991621398242703,
+          "pitch": 0.16564397142008502,
+          "rotation": 0,
+          "target": "19-reclaimed360-22"
         }
       ],
       "infoHotspots": []
