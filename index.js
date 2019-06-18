@@ -1,3 +1,23 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@keiserjb 
+24
+82
+835 427 google/marzipano
+ Code  Issues 28  Pull requests 3  Projects 0  Security  Insights
+marzipano/demos/sample-tour/index.js
+@jordyno jordyno Fix fullscreen button state in sample tour demo.
+4b3a0e7 on Dec 12, 2017
+@tjgq @manuelcabral @badimalex @jordyno
+393 lines (331 sloc)  12.9 KB
+    
 /*
  * Copyright 2016 Google Inc. All rights reserved.
  *
@@ -19,7 +39,7 @@
   var Marzipano = window.Marzipano;
   var bowser = window.bowser;
   var screenfull = window.screenfull;
-  var data = window.APP_DATA;
+  var data = window.data;
 
   // Grab elements from DOM.
   var panoElement = document.querySelector('#pano');
@@ -72,7 +92,7 @@
 
   // Create scenes.
   var scenes = data.scenes.map(function(data) {
-    var urlPrefix = "tiles";
+    var urlPrefix = "//www.marzipano.net/media";
     var source = Marzipano.ImageUrlSource.fromString(
       urlPrefix + "/" + data.id + "/{z}/{f}/{y}/{x}.jpg",
       { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg" });
@@ -390,3 +410,4 @@
   switchScene(scenes[0]);
 
 })();
+
